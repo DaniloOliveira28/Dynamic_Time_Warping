@@ -47,19 +47,19 @@ A classe KnnDtw, possui 6 métodos:
 ## KnnDtw.set_bandwidth
 Ajusta o tamanho da largura da janela e dos pontos que serão casados.
 
-### KnnDtw.fit
+**KnnDtw.fit**
 Este método treina o algoritmo com a base de treino e de referência no cálculo de distâncias.
 
-### KnnDtw._distance_points
+**KnnDtw._distance_points**
 Este método calcula a distância entre dois pontos dados.
 
-### KnnDtw._dtw_distance
+**KnnDtw._dtw_distance**
 Este método calcula a distância entre duas séries temporais dadas.
 
-### KnnDtw._dist_matrix
+**KnnDtw._dist_matrix**
 Dada uma base de testes, para cada série de teste este método calcula a distância desta série-teste para cada série na base de treino.
 
-### KnnDtw.predict
+**KnnDtw.predict**
 Dada a matriz, para cada série de testes, este métodos, através do 1-KNN prediz qual é o seu rótulo.
 
 ## Script run1d 
