@@ -13,7 +13,7 @@ Devido a esta deformação dimensão temporal, DTW é bom para a classificação
 
 O diagrama abaixo mostra como uma representação matriz de distância DTW.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dynamic_time_warping.png" alt="Drawing" style="width: 200px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dynamic_time_warping.png" alt="Drawing" style="width: 100px;"/>
 
 
 # KNN com DTW
@@ -21,7 +21,7 @@ KNN é um algoritmo de classificação de dados familiar para muitos no mundo ap
 
 Usando o DTW para o cálculo de distâncias podemos  usar KNN no contexto dos dados de séries de tempo. 
 
-<img src="hhttps://raw.githubusercontent.com/markdregan/K-Nearest-Neighbors-with-Dynamic-Time-Warping/master/images/dtw_knn_schematic.png" style="width: 200px;"/>
+<img src="hhttps://raw.githubusercontent.com/markdregan/K-Nearest-Neighbors-with-Dynamic-Time-Warping/master/images/dtw_knn_schematic.png" style="width: 100px;"/>
 
 
 # Estudo de Caso do projeto
@@ -31,9 +31,7 @@ Essa base consiste de movimentos realizados com um controle do videogame Wii.
 ## Janela Sakoe-Chiba
 O uso da matriz completa da DTW pode levar a alguns casamentos espúrios. Isso porque os pontos da matriz distantes da diagonal ascendente representam casamentos entre observações distantes das séries em comparação. Uma solução para esse problema é implementar uma banda de restrição, como a banda de Sakoe-Chiba. Essa banda restringe os pontos que podem ser casados para uma distância máxima da diagonal, como ilustrado abaixo.
 
-<img src="https://raw.githubusercontent.com/DaniloOliveira28/Dynamic_Time_Warping/master/images/sakoechiba.png" style="width: 200px;"/>
-
-![alt Sakoe-Chiba]()
+<img src="https://raw.githubusercontent.com/DaniloOliveira28/Dynamic_Time_Warping/master/images/sakoechiba.png" style="width: 100px;"/>
 
 ## Cython
 
