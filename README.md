@@ -117,8 +117,13 @@ O melhor resultado encontrado foi com uma janela de 20% e que roda com praticame
 O projeto propões a adaptação para séries temporais representadas por 3 dimensões. Para isso é necessário adaptar o modo como o algoritmo calcula a similaridade. 
 
 # Referências
+
 [1] Dynamic Time Warping. https://en.wikipedia.org/wiki/Dynamic_time_warping.
+
 [2] Eduardo T. Bogue, Edson T. Matsubara, Anderson C. Bessa. Uma Abordagem em Reconhecimento de Movimentos Utilizando TRKNN e Dynamic Time Warping. ENIA 2012.
+
 [3] Mohammad Shokoohi-Yekta, Jun Wang and Eamonn Keogh. On the Non-Trivial Generalization of Dynamic Time Warping to the Multi-Dimensional Case. SDM 2015.
+
 [4] DTW-KNN. https://github.com/markdregan/K-Nearest-Neighbors-with-Dynamic-Time-Warping
+
 [5] Speeding up python numpy cython http://technicaldiscovery.blogspot.com.br/2011/06/speeding-up-python-numpy-cython-and.html
