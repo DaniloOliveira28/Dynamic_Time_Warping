@@ -44,25 +44,33 @@ O DTW, em sua implementação mais simples, possui uma ordem de complexidade de 
 
 ## Classe KnnDTW
 A classe KnnDtw, possui 6 métodos:
-## KnnDtw.set_bandwidth
+
+**KnnDtw.set_bandwidth**
+
 Ajusta o tamanho da largura da janela e dos pontos que serão casados.
 
 **KnnDtw.fit**
+
 Este método treina o algoritmo com a base de treino e de referência no cálculo de distâncias.
 
 **KnnDtw._distance_points**
+
 Este método calcula a distância entre dois pontos dados.
 
 **KnnDtw._dtw_distance**
+
 Este método calcula a distância entre duas séries temporais dadas.
 
 **KnnDtw._dist_matrix**
+
 Dada uma base de testes, para cada série de teste este método calcula a distância desta série-teste para cada série na base de treino.
 
 **KnnDtw.predict**
+
 Dada a matriz, para cada série de testes, este métodos, através do 1-KNN prediz qual é o seu rótulo.
 
 ## Script run1d 
+
 O script run1d.py executa a classificação para a base de dados proposta pelo projetos com bandas de: 0%, 1%, 5%, 10%, 20%,100%. Um banda de 100% corresponde a todos os casamentos possíveis, ou seja, como se não houvesse a implementação da janela Sakoe-Chiba.
 
 ## Execução
