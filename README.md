@@ -13,16 +13,18 @@ Devido a esta deformação dimensão temporal, DTW é bom para a classificação
 
 O diagrama abaixo mostra como uma representação matriz de distância DTW.
 
+<p style="text-align: center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dynamic_time_warping.png" alt="Drawing" width="400"/>
-
+</p>
 
 # KNN com DTW
 KNN é um algoritmo de classificação de dados familiar para muitos no mundo aprendizado de máquina. Basicamente ele funciona do seguinte modo, dado uma observação não rotulada (a estrela abaixo), ele é comparado com uma população de observações rotuladas (círculos azuiz e laranjas). Ao encontrar os círculos mais próximos K para a estrela, podemos inferir o rótulo de classe para a estrela por meio de votação por maioria. Por exemplo, para K = 6 a estrela é classifica como da classe A.
 
 Usando o DTW para o cálculo de distâncias podemos  usar KNN no contexto dos dados de séries de tempo. 
 
+<p style="text-align: center;">
 <img src="https://raw.githubusercontent.com/markdregan/K-Nearest-Neighbors-with-Dynamic-Time-Warping/master/images/dtw_knn_schematic.png" width="400"/>
-
+</p>
 
 # Estudo de Caso do projeto
 O objetivo deste projeto é implementar um algoritmo de classificação de séries temporais utilizando a distância Dynamic Time Warping (DTW) e dados obtidos a partir de acelerômetros.
@@ -31,7 +33,10 @@ Essa base consiste de movimentos realizados com um controle do videogame Wii.
 ## Janela Sakoe-Chiba
 O uso da matriz completa da DTW pode levar a alguns casamentos espúrios. Isso porque os pontos da matriz distantes da diagonal ascendente representam casamentos entre observações distantes das séries em comparação. Uma solução para esse problema é implementar uma banda de restrição, como a banda de Sakoe-Chiba. Essa banda restringe os pontos que podem ser casados para uma distância máxima da diagonal, como ilustrado abaixo.
 
+<p style="text-align: center;">
 <img src="https://raw.githubusercontent.com/DaniloOliveira28/Dynamic_Time_Warping/master/images/sakoechiba.png" width="400"/>
+</p>
+
 
 ## Cython
 
@@ -84,13 +89,17 @@ Para rodar:
 # Resultados
 Puro Python*
 
+<p style="text-align: center;">
 <img src="https://raw.githubusercontent.com/DaniloOliveira28/Dynamic_Time_Warping/master/images/results.png" width="700" />
+</p>
 
 *infelizmente com o algoritmo puro em python não foi calculada para todas as bandas propostas no projeto.
 
 Python com Cython
 
+<p style="text-align: center;">
 <img src="https://raw.githubusercontent.com/DaniloOliveira28/Dynamic_Time_Warping/master/images/results_cython.png" width="700" />
+</p>
 
 # Conclusões
 O DTW + KNN implementados em uma linguagem e ambiente de alta performance e com estrategia como o Sakoe-Chiba mostra-se um ótimo aliado para classificação de séries temporais e que podem ser aplicados em projetos como classificação de movimentos.
