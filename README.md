@@ -5,7 +5,7 @@ A proposta deste projeto é explorar e entender o algoritimo Dynamic Time Warpin
 Os detalhes do projeto podem ser [consultados aqui](https://github.com/DaniloOliveira28/Dynamic_Time_Warping/blob/master/Data/Projeto2.pdf)
 
 # Dynamic Time Warping (DTW)
-Em análises de séries temporais, medir similaridade requer algoritmos e estratégias particulares, pois sequências de dados discretos que variam conforme o tempo e velocidade possuem estrutura e natureza distintas de dados mais simples, por exemplo: binários. Neste sentido, o algoritmo Dynamic Time Warping(DTW)[1] é um ótimo candidato para esta tarefa.
+Análises que visam calcular similaridades entre séries temporais requerem algoritmos e estratégias particulares, pois sequências de dados discretos que variam conforme o tempo e velocidade possuem estrutura e natureza distintas em comparação à dados mais simples, por exemplo: binários. Entre os algoritimos que endereçam esses problemas está o algoritmo Dynamic Time Warping(DTW)[1].
 
 O algoritmo DTW encontra o alinhamento ótimo entre duas sequências de observações por entortar a dimensão de tempo com certas restrições.
 
