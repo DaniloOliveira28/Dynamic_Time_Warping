@@ -114,7 +114,7 @@ O DTW + KNN implementados em uma linguagem e ambiente de alta performance e com 
 O melhor resultado encontrado foi com uma janela de 20% e que roda com praticamente metade do tempo considerando uma janela de 100%.
 
 # To Do
-O projeto propões a adaptação para séries temporais representadas por 3 dimensões. Para isso é necessário adaptar o modo como o algoritmo calcula a similaridade. 
+O projeto propõe a adaptação para séries temporais representadas por 3 dimensões. Para isso é necessário adaptar o modo como o algoritmo calcula a similaridade. 
 
 # Referências
 
